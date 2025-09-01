@@ -1,21 +1,14 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# Solo para alertas de seguridad - configurado desde GitHub UI
+# Para activar solo PRs de seguridad, ve a Settings > Security > Dependabot:
+# ✅ Dependabot alerts: ENABLED
+# ✅ Dependabot security updates: ENABLED
+# ❌ Dependabot version updates: DISABLED
+#
+# Este archivo está comentado para evitar actualizaciones automáticas de versiones
 
-version: 2
-updates:
-  - package-ecosystem: "npm" # Yarn is compatible under npm ecosystem
-    directory: "/javascript" # Location of your package.json / yarn.lock
-    schedule:
-      interval: "weekly" # Options: daily, weekly, monthly
-    open-pull-requests-limit: 2
-    commit-message:
-      prefix: "chore"
-      include: "scope"
-    allow:
-      - dependency-type: "direct" # all explicitly defined dependencies.
-    versioning-strategy: increase # defaults to the latest non-major version allowed.
-    ignore: # block skips major updates.
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"] # ensures only minor and patch updates are allowed.
+# version: 2
+# updates:
+#   - package-ecosystem: "npm"
+#     directory: "/javascript"
+#     schedule:
+#       interval: "weekly"
