@@ -9,7 +9,3 @@ updates:
     directory: "/javascript"
     schedule:
       interval: "weekly"
-  - package-ecosystem: bundler
-    directory: "/ruby"
-    schedule:
-      interval: "weekly"
